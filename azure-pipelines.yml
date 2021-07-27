@@ -17,7 +17,7 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'ls -a'
+    script: 'ls -a && cd src'
 
 # - task: NodeTool@0
 #   inputs:
