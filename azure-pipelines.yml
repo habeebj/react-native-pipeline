@@ -12,8 +12,8 @@ pool:
 steps:
 - task: Bash@3
   inputs:
-    filePath: '$(Build.SourcesDirectory)'
-    arguments: 'pwd'
+    targetType: 'inline'
+    script: 'pwd'
 
 # - task: NodeTool@0
 #   inputs:
