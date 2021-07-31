@@ -21,8 +21,8 @@ steps:
     workingDir: '$(Build.SourcesDirectory)/src'
 - task: Gradle@2
   inputs:
-    workingDirectory: '$(Build.SourcesDirectory)/src/android'
-    gradleWrapperFile: '$(Build.SourcesDirectory)/src/android/gradlew'
+    workingDirectory: 'src/android'
+    gradleWrapperFile: 'src/android/gradlew'
     gradleOptions: '-Xmx3072m'
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
